@@ -1,0 +1,1 @@
+para guardar todo lo que sean recursos graficos (imagenes, videos, fonts, etc)

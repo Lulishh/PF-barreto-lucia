@@ -1,0 +1,175 @@
+/* Reset - Configuración básica de mis estilos 
+
+UNIDADES DE MEDIDA
+
+100% - pantalla
+100vw - view width - ancho de pantalla
+100vh - view height - alto de pantalla
+
+px - pixel - Medida fija
+
+REM --> Tamaño de medida base 16px - Tamaño por default en root
+
+1rem - 16px
+0.5rem - 8px
+2rem - 32px
+
+EM --> Yo especifico el tamaño base - depende del tamaño de letra que haya puesto yo
+
+1em - 14 px
+0.5em - 28px
+
+*/
+
+*{ /*todo lo que ponga aca adentro se aplica a todos los archivos*/
+
+    font-family: 'Montserrat Alternates', sans-serif;
+    /* font-size: 14px;  lo especifico si voy a usar EM, si uso REM no lo necesito */
+
+    /* pone en cero la configuración inicial, sirve para quitar espacios en blanco que pueden quedar */
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Header */
+header{
+    background-color: #dfc7c9;
+    align-items: center; 
+}
+
+header section{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+header section p{
+    font-family: 'Salsa', cursive;
+    font-size: 6.5rem;
+    color: #241501;
+}
+.menu ul {
+    list-style: none; /* para sacar las viñetas */
+    margin: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: flex; /* coloca la lista horizontal */
+    justify-content: center;
+    background-color: #3d2302;
+  }
+
+.menu li {
+    margin-right: 5rem; 
+}
+
+.menu li a{  
+    color: #d2bfa7;
+    text-decoration: none; /* para sacar el subrayado */
+    font-weight: 600;
+}
+
+.logo-header {
+    height: 20rem;
+}
+
+/* Main */
+
+main{
+    background-color: #DBFEB8;
+}
+
+.titulo-seccion{
+    text-align: center;
+    font-size: 4.5rem;
+    color: #3d2302;
+    padding: 3rem;
+    font-weight: 600;
+}
+
+.banner{
+    width: 100%;
+    height: auto; 
+    display: block;
+}
+
+.container-centrado-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+.container-centrado {
+    display: block;
+    text-align: center; 
+}
+
+.imagen-sobre-nosotros{
+    max-height: 25rem;
+    width: auto;
+}
+
+.novedades__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 25rem 15rem;
+}
+  
+.novedades__elementos {
+    max-height: 25rem;
+    width: auto;
+    cursor: pointer;
+}
+.novedades__descripcion{
+    text-align: justify;
+    margin: 1rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+section article a{
+    text-decoration: none;
+}
+
+/* Footer */
+
+footer{
+    background-color:#2A3D45;
+    justify-content: space-between;
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+footer section {
+    display: flex;
+    align-items: center;
+}
+
+footer section p{
+    font-size: 1.5rem;
+}
+
+.logos-redes{
+    height: 4rem;
+    margin-inline: 2rem;
+}
+
+.redes-footer{
+    margin-right: 3rem;
+}
+.logo-footer{
+    height: 10rem;
+}
+
+
+/*media query para mobile*/
+
+@media only screen and (max-width: 500px) {
+    main{
+        background-color: #7ba0d0;
+    }
+}

@@ -63,13 +63,12 @@ header section p{
 .menu li a{  
     color: #d2bfa7;
     text-decoration: none; /* para sacar el subrayado */
-    font-weight: 600;
+    font-weight: 600px;
 }
 
 
 .menu__logo {
-    width: 20vw; /
-    max-height: 15vh; 
+    width: 20vw; 
 }
 
 
@@ -152,14 +151,10 @@ footer{
     align-items: center;
 }
 
-footer section {
-    display: flex;
-    align-items: center;
+.contacto__footer {
+    background-color: #2A3D45;
 }
 
-footer section p{
-    font-size: 1.5rem;
-}
 
 .logos-redes{
     height: 4rem;
@@ -175,16 +170,20 @@ footer section p{
 
 
 
-/* Mostrar el menú de hamburguesa solo en pantallas pequeñas */
+
 @media (min-width: 768px) {
     .menu--mobile {
-        display: none;
+        display: none; /* Oculta en pantallas grandes  */
     }
 }
 
-/* Mostrar el menú de navegación solo en pantallas grandes */ 
+
 @media (max-width: 767px) {
     .menu--desktop {
-        display: none;
+        display: none; /* Oculta en pantallas chicas */ 
+    }
+
+    footer {
+        display: none; /* Oculta en pantallas chicas */ 
     }
 }

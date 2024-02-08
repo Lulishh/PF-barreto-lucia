@@ -4,7 +4,6 @@
     <meta charset="UTF-8"> <!-- determina el tipo de símbolos que se pueden usar -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- compatibilidad con navegadores antiguos -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- escala o diseño responsive -->
-    <title>Pajaro-Carpintero-tips</title> <!-- da el nombre a la web en la pestaña -->
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,28 +11,74 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,200;0,400;0,600;1,300;1,400&family=Salsa&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-   <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
-   <title>Pájaro carpintero - Tips y tutoriales</title>
+    <!-- CSS bootstrap -->    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ 
+    <title>Pájaro carpintero - Tips y tutoriales</title>
 
 </head>
 <body>
     <!-- Espacio para el encabezado: logo, título, menú   -->
     <header>
-        <section>
-            <img class="logo-header" src="../assets/logo-vectorizado.png" alt="logo-empresa"> 
-            <p>Pájaro Carpintero</p>
-        </section>
-        <nav class="menu">
-            <ul>
-                <li><a href="../index.html">Novedades</a></li>
-                <li><a href="../pages/trabajos-realizados.html">Trabajos realizados</a></li> 
-                <li><a href="../pages/tips-y-tutoriales.html">Tips y tutoriales</a></li> 
-                <li><a href="../pages/sobre-nosotros.html">Sobre nosotros</a></li> 
-                <li><a href="../pages/contacto.html">Contacto</a></li>         
-            </ul>
-        </nav>
-
+        <div class="menu--desktop">
+            <section class="menu__nombre">
+                <img class="menu__logo" src="../assets/logo-vectorizado.png" alt="logo-empresa"> 
+                <p>Pájaro Carpintero</p>
+            </section>
+            <nav class="menu">
+                <section class="menu__horizontal">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Novedades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/trabajos-realizados.html">Trabajos realizados</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/tips-y-tutoriales.html">Tips y tutoriales</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/sobre-nosotros.html">Sobre nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </section>
+            </nav>
+        </div>
+        <div class="menu--mobile">
+            <section class="container-fluid">
+                <div class="row">
+                    <section class="col-10 menu__nombre">
+                        <img class="menu__logo" src="../assets/logo-vectorizado.png" alt="logo-empresa"> 
+                        <p>Pájaro Carpintero</p>
+                    </section>
+                    <section class="col-2 menu__contenedor__desplegable">
+                        <nav class="menu__desplegable">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../index.html">Novedades</a></li>
+                                    <li><a class="dropdown-item" href="../pages/trabajos-realizados.html">Trabajos realizados</a></li>
+                                    <li><a class="dropdown-item" href="../pages/tips-y-tutoriales.html">Tips y tutoriales</a></li>
+                                    <li><a class="dropdown-item" href="../pages/sobre-nosotros.html">Sobre nosotros</a></li>
+                                    <li><a class="dropdown-item" href="../pages/contacto.html">Contacto</a></li>
+                                    <li>
+                                        <section class="redes-footer">
+                                            <img class="logos-redes" src="../assets/logo-instagram.png" alt="logo-instagram">
+                                            <img class="logos-redes" src="../assets/logo-fb.png" alt="logo-fb">
+                                            <img class="logos-redes" src="../assets/logo-youtube.png" alt="logo-youtube"> 
+                                        </section>
+                                        <section>
+                                            <img class="logo-footer" src="../assets/logo-vectorizado.png" alt="logo-empresa">
+                                            <div>
+                                                <p>Contacto:</p>
+                                                <p>tel:099741852</p>
+                                                <p>pajarocarpintero@gmail.com</p>
+                                            </div>
+                                        </section>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </section>
+                </div> 
+            </section>  
+        </div>
     </header>
 
     <!-- Espacio para el contenido principal -->
@@ -85,5 +130,9 @@
             </div>
         </section>
     </footer>
+
+    <!-- JS bootstrap -->    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </body>
 </html>

@@ -96,6 +96,37 @@ header section p{
     --bs-btn-active-border-color: none;
 }
 
+
+.dropdown-menu {
+    --bs-dropdown-min-width: 20rem;
+    padding: 10px; 
+}
+
+.dropdown-menu hr {
+    margin: 10px 0; /* Espaciado para la línea horizontal */
+}
+/* 
+.redes-footer {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 10px; 
+}
+
+.footer__logo__redes {
+    width: 30px; 
+    height: auto;
+}
+*/
+.menu__desplegable_logo {
+    width: 100px; 
+    height: auto;
+    margin-bottom: 10px; 
+} 
+
+.menu__desplegable_contacto p{
+    font-size: 15px;
+}
+
 /* Main */
 
 main{

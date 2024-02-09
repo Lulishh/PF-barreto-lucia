@@ -10,11 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,200;0,400;0,600;1,300;1,400&family=Salsa&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css">
-
     <!-- CSS bootstrap -->    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
 
     <title>Pájaro carpintero - Trabajos realizados</title>
 
@@ -110,17 +110,30 @@
 
     <!-- Espacio para el pie de página -->
     <footer>
-        <section class="redes-footer">
-            <img class="logos-redes" src="../assets/logo-instagram.png" alt="logo-instagram">
-            <img class="logos-redes" src="../assets/logo-fb.png" alt="logo-fb">
-            <img class="logos-redes" src="../assets/logo-youtube.png" alt="logo-youtube"> 
-        </section>
-        <section>
-            <img class="logo-footer" src="../assets/logo-vectorizado.png" alt="logo-empresa">
-            <div>
-                <p>Contacto:</p>
-                <p>tel:099741852</p>
-                <p>pajarocarpintero@gmail.com</p>
+        <section class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-3 d-flex justify-content-start"> 
+                    <img class="footer__logo__redes" src="../assets/logo-instagram.png" alt="logo-instagram" style="max-height: 10rem;">
+                    <img class="footer__logo__redes" src="../assets/logo-fb.png" alt="logo-fb" style="max-height: 10rem;">
+                    <img class="footer__logo__redes" src="../assets/logo-youtube.png" alt="logo-youtube" style="max-height: 10rem;"> 
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-5 justify-content-end"> 
+                    <div class="card mb-4 footer__contacto text-end"> <!-- text-end alinea texto de la tarjeta a la derecha -->
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <img src="../assets/logo-vectorizado.png" class="img-fluid rounded-start footer__logo" alt="logo-empresa">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Contacto:</h5>
+                                    <p class="card-text">tel:099741852</p>
+                                    <p class="card-text">pajarocarpintero@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </footer>

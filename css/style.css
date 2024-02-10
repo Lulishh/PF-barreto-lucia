@@ -85,47 +85,49 @@ header section p{
 
 .btn-secondary{
     --bs-btn-color: #3e2525;
-    --bs-btn-bg: #e0952b;
+    --bs-btn-bg: #533710;
     --bs-btn-border-color: none;
     --bs-btn-hover-color: #5f4d35;
-    --bs-btn-hover-bg: #7b7266;
+    --bs-btn-hover-bg: #745d3f;
     --bs-btn-hover-border-color: none;
     --bs-btn-focus-shadow-rgb: 130,138,145;
     --bs-btn-active-color: #5f4d35;
-    --bs-btn-active-bg: #7b7266;
+    --bs-btn-active-bg: #745d3f;
     --bs-btn-active-border-color: none;
 }
 
 
 .dropdown-menu {
-    --bs-dropdown-min-width: 20rem;
+    --bs-dropdown-min-width: 18rem;
     padding: 10px; 
+    background-color: #ece3e4 ;
 }
 
-.dropdown-menu hr {
-    margin: 10px 0; /* Espaciado para la línea horizontal */
-}
-/* 
-.redes-footer {
-    display: flex;
-    justify-content: space-between; 
-    margin-bottom: 10px; 
-}
-
-.footer__logo__redes {
-    width: 30px; 
-    height: auto;
-}
-*/
 .menu__desplegable_logo {
-    width: 100px; 
+    width: 95px; 
     height: auto;
     margin-bottom: 10px; 
 } 
 
 .menu__desplegable_contacto p{
-    font-size: 15px;
+    font-size: 13px;
 }
+
+.menu__desplegable__linea{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.menu__desplegable__redes{
+    margin: 20px;
+}
+
+.menu__desplegable__logoredes{
+    height: 50px;
+    width: auto;
+    margin-inline: 10px;
+}
+
 
 /* Main */
 
@@ -145,18 +147,6 @@ main{
     width: 100%;
     height: auto; 
     display: block;
-}
-
-.container-centrado-flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    text-align: center;
-  }
-
-.container-centrado {
-    display: block;
-    text-align: center; 
 }
 
 .imagen-sobre-nosotros{
@@ -196,6 +186,24 @@ section article a{
     text-decoration: none;
 }
 
+.tips_cards_contenedor{
+    padding-bottom: 50px;
+}
+
+.tips__cards{
+    align-items: center;
+    background-color: #fcf3e6;
+}
+
+.tips__cards__videos{
+    margin-top: 10px;
+
+}
+
+.tips__cards__texto{
+    text-align: justify;
+}
+
 /* Footer */
 
 footer{
@@ -231,7 +239,7 @@ footer{
 
 
 
-@media (min-width: 576px) and (max-width: 768px) {
+@media (max-width: 768px) {
     .menu--desktop {
         display: none; /* Oculta en pantallas chicas */ 
     }

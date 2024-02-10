@@ -49,41 +49,50 @@
                     <section class="col-2 menu__contenedor__desplegable">
                         <nav class="menu__desplegable">
                             <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="true">
                                 </button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="../index.html">Novedades</a></li>
-                                    <li><a class="dropdown-item" href="../pages/trabajos-realizados.html">Trabajos realizados</a></li>
-                                    <li><a class="dropdown-item" href="../pages/tips-y-tutoriales.html">Tips y tutoriales</a></li>
-                                    <li><a class="dropdown-item" href="../pages/sobre-nosotros.html">Sobre nosotros</a></li>
-                                    <li><a class="dropdown-item" href="../pages/contacto.html">Contacto</a></li>
-                                    <li>
-                                        <section class="redes-footer">
-                                            <img class="logos-redes" src="../assets/logo-instagram.png" alt="logo-instagram">
-                                            <img class="logos-redes" src="../assets/logo-fb.png" alt="logo-fb">
-                                            <img class="logos-redes" src="../assets/logo-youtube.png" alt="logo-youtube"> 
-                                        </section>
-                                        <section>
-                                            <img class="logo-footer" src="../assets/logo-vectorizado.png" alt="logo-empresa">
-                                            <div>
-                                                <p>Contacto:</p>
-                                                <p>tel:099741852</p>
-                                                <p>pajarocarpintero@gmail.com</p>
-                                            </div>
-                                        </section>
-                                    </li>
-                                </ul>
+                                <section class="container">
+                                    <div class="row">
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="../index.html">Novedades</a></li>
+                                            <li><a class="dropdown-item" href="../pages/trabajos-realizados.html">Trabajos realizados</a></li>
+                                            <li><a class="dropdown-item" href="../pages/tips-y-tutoriales.html">Tips y tutoriales</a></li>
+                                            <li><a class="dropdown-item" href="../pages/sobre-nosotros.html">Sobre nosotros</a></li>
+                                            <li><a class="dropdown-item" href="../pages/contacto.html">Contacto</a></li>
+                                            <hr class="menu__desplegable__linea"> <!-- Línea horizontal -->
+                                            <li>
+                                                <section class="menu__desplegable__redes">
+                                                    <img class="menu__desplegable__logoredes" src="../assets/logo-instagram.png" alt="logo-instagram">
+                                                    <img class="menu__desplegable__logoredes" src="../assets/logo-fb.png" alt="logo-fb">
+                                                    <img class="menu__desplegable__logoredes" src="../assets/logo-youtube.png" alt="logo-youtube"> 
+                                                </section>
+                                            </li>
+                                            <li>
+                                                <section>
+                                                    <img class="menu__desplegable_logo" src="../assets/logo-vectorizado.png" alt="logo-empresa">
+                                                    <div class="menu__desplegable_contacto">
+                                                        <p>Contacto:</p>
+                                                        <p>tel:099741852</p>
+                                                        <p>pajarocarpintero@gmail.com</p>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>       
                             </div>
                         </nav>
                     </section>
                 </div> 
-            </section>  
+            </section>
         </div>
     </header>
 
     <!-- Espacio para el contenido principal -->
     <main>
-        <h1 class="titulo-seccion"> Trabajos realizados </h1> <!-- se usa una única vez-->
+        <section class="container-fluid">
+            <h1 class="seccion__titulo"> Trabajos realizados </h1> <!-- se usa una única vez-->
+        </section>
         <section>
             <!-- Elemento 1 -->
             <article class="container-centrado-flex">

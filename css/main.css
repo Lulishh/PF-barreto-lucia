@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/*Reset*/
+* {
+  font-family: "Montserrat Alternates", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*Media query*/
+@media (max-width: 768px) {
+  .menu--desktop {
+    display: none; /* Oculta en pantallas chicas */
+  }
+  .novedades__descripcion {
+    margin: 1.5rem;
+    margin-bottom: 4rem;
+  }
+  footer {
+    display: none; /* Oculta en pantallas chicas */
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .menu--mobile {
+    display: none; /* Oculta en pantallas grandes  */
+  }
+  .novedades__descripcion {
+    margin: 1.5rem;
+    margin-bottom: 4rem;
+  }
+}
+@media (min-width: 993px) {
+  .menu--mobile {
+    display: none; /* Oculta en pantallas grandes  */
+  }
+}
+/* Header */
+header {
+  background-color: #dfc7c9;
+  align-items: center;
+}
+header section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header section p {
+  font-family: "Salsa", cursive;
+  font-size: 6vw;
+  color: #241501;
+  margin: 0; /* Evita el espacio adicional alrededor del texto */
+}
+
+.menu__horizontal {
+  list-style: none; /* para sacar las viñetas */
+  margin: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background-color: #3d2302;
+}
+.menu__nombre {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+.menu__contenedor__desplegable {
+  background-color: #3d2302;
+}
+.menu__logo {
+  width: 20vw;
+}
+.menu li a {
+  color: #d2bfa7;
+  text-decoration: none; /* para sacar el subrayado */
+  font-weight: 600px;
+}
+
+.nav-item {
+  --bs-nav-link-color: #64577e;
+  --bs-nav-link-hover-color: #68588a;
+}
+
+.btn-secondary {
+  --bs-btn-color: #3e2525;
+  --bs-btn-bg: #533710;
+  --bs-btn-border-color: none;
+  --bs-btn-hover-color: #5f4d35;
+  --bs-btn-hover-bg: #745d3f;
+  --bs-btn-hover-border-color: none;
+  --bs-btn-focus-shadow-rgb: 130,138,145;
+  --bs-btn-active-color: #5f4d35;
+  --bs-btn-active-bg: #745d3f;
+  --bs-btn-active-border-color: none;
+}
+
+.menu__desplegable {
+  --bs-dropdown-min-width: 18rem;
+  padding: 10px;
+  background-color: #ece3e4;
+}
+.menu__desplegable_logo {
+  width: 95px;
+  height: auto;
+  margin-bottom: 10px;
+}
+.menu__desplegable_contacto p {
+  font-size: 13px;
+}
+.menu__desplegable__linea {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.menu__desplegable__redes {
+  margin: 20px;
+}
+.menu__desplegable__logoredes {
+  height: 50px;
+  width: auto;
+  margin-inline: 10px;
+}
+
+/*Principal*/
+main {
+  background-color: #DBFEB8;
+}
+
+.seccion__titulo {
+  text-align: center;
+  font-size: 7vw;
+  color: #3d2302;
+  padding: 3rem;
+  font-weight: 600;
+}
+
+/*Footer*/
+.footer {
+  background-color: #2A3D45;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+}
+.footer__contacto {
+  background-color: #2A3D45;
+  --bs-card-border-color: none;
+  margin-bottom: 0px;
+  color: #d2bfa7;
+}
+.footer__logo__redes {
+  height: 6vw;
+  margin-inline: 1.5vw;
+}
+.footer__logo {
+  max-height: 20rem;
+  width: auto;
+}
+
+.card-title {
+  --bs-card-title-spacer-y: 1.5rem;
+}
+
+/*# sourceMappingURL=main.css.map */

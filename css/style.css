@@ -33,7 +33,7 @@ EM --> Yo especifico el tamaño base - depende del tamaño de letra que haya pue
 }
 
 /* Header */
-header{
+header{ 
     background-color: #dfc7c9;
     align-items: center; 
 }

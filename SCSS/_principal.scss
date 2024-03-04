@@ -1,0 +1,13 @@
+/*Principal*/
+
+main{
+    background-color: $bg-principal;
+}
+
+.seccion__titulo{
+    text-align: center;
+    font-size: map-get($size-text,title-section);
+    color: $color-titles;
+    padding: 3rem;
+    font-weight: 600;
+}

@@ -1,0 +1,16 @@
+
+//Configuración
+@import './configuracion/variables';
+@import './configuracion/reset';
+@import './configuracion/mixin';
+@import './configuracion/_mediaquery';
+
+
+//Estructura
+@import 'header';
+@import 'principal';
+@import 'footer';
+
+//Secciones
+@import './secciones/novedades';
+@import './secciones/sobrenosotros'

@@ -1,0 +1,97 @@
+/* Header */
+header{ 
+    background-color: $bg-header;
+    align-items: center; 
+    
+    section{
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+
+        p{
+            font-family: $font-nombre-empresa;
+            font-size: map-get($size-text,title-header);
+            color: $color-nombre-empresa;
+            margin: 0; /* Evita el espacio adicional alrededor del texto */
+        }
+    }
+}
+
+.menu {
+    &__horizontal {
+        list-style: none; /* para sacar las viñetas */
+        margin: 0;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        background-color: $bg-navbar;
+      } 
+
+    &__nombre{
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+
+    &__contenedor__desplegable{
+        background-color: $bg-navbar;
+    }
+
+    &__logo {
+        width: 20vw; 
+    }
+
+    li a{  
+        color: $color-font-dark-bg;
+        text-decoration: none; /* para sacar el subrayado */
+        font-weight: 600px;
+    }
+
+}
+
+.nav-item{
+    --bs-nav-link-color: #64577e;
+    --bs-nav-link-hover-color: #68588a;
+}
+
+.btn-secondary{
+    --bs-btn-color: #3e2525;
+    --bs-btn-bg: #533710;
+    --bs-btn-border-color: none;
+    --bs-btn-hover-color: #5f4d35;
+    --bs-btn-hover-bg: #745d3f;
+    --bs-btn-hover-border-color: none;
+    --bs-btn-focus-shadow-rgb: 130,138,145;
+    --bs-btn-active-color: #5f4d35;
+    --bs-btn-active-bg: #745d3f;
+    --bs-btn-active-border-color: none;
+}
+
+.menu__desplegable {
+    --bs-dropdown-min-width: 18rem;
+    padding: 10px; 
+    background-color: #ece3e4 ;
+
+    &_logo {
+        width: 95px; 
+        height: auto;
+        margin-bottom: 10px; 
+    }
+
+    &_contacto p{
+        font-size: 13px;
+    }
+
+    &__linea{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    &__redes{
+        margin: 20px;
+    }
+
+    &__logoredes{
+        height: 50px;
+        width: auto;
+        margin-inline: 10px;
+    }
+}

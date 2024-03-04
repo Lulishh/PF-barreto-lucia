@@ -1,0 +1,35 @@
+/*Media query*/
+
+@media (max-width: 768px) {
+    .menu--desktop {
+        display: none; /* Oculta en pantallas chicas */ 
+    }
+
+    .novedades__descripcion{
+        margin: 1.5rem;
+        margin-bottom: 4rem;
+    } 
+
+    footer {
+        display: none; /* Oculta en pantallas chicas */ 
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .menu--mobile {
+        display: none; /* Oculta en pantallas grandes  */
+    }
+
+    .novedades__descripcion{
+        margin: 1.5rem;
+        margin-bottom: 4rem;
+    } 
+
+}
+
+@media (min-width: 993px) {
+    .menu--mobile {
+        display: none; /* Oculta en pantallas grandes  */
+    }
+}

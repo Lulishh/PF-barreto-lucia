@@ -1,0 +1,30 @@
+/*Footer*/
+
+.footer{
+    background-color: $bg-footer;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+
+    &__contacto {
+        background-color: $bg-footer;
+        --bs-card-border-color: none;
+        margin-bottom: 0px;
+        color: $color-font-dark-bg;
+    }
+
+    &__logo__redes{
+        height: 6vw;
+        margin-inline: 1.5vw;
+    }
+
+    &__logo{
+        max-height: 20rem;
+        width: auto;
+    }
+}
+
+.card-title{
+    --bs-card-title-spacer-y: 1.5rem;
+}
+

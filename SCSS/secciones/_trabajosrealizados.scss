@@ -1,0 +1,23 @@
+/*Sección: trabajos realizados*/
+
+.trabajos{
+    &__container{
+        display: flex;
+        align-items: center; 
+        padding: 50px 30px;
+    }
+
+    &__img{ 
+        width: 300px; 
+        height: auto;
+        margin: 20px;
+    }
+
+    &__descripcion{
+        flex: 1;
+        text-align: center;
+        font-size: map-get($size-text, text-section);
+    }
+
+
+}

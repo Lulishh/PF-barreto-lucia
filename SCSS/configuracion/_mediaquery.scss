@@ -4,28 +4,31 @@
     .menu--desktop {
         display: none; /* Oculta en pantallas chicas */ 
     }
-
     .novedades__descripcion{
         margin: 1.5rem;
         margin-bottom: 4rem;
     } 
-
     footer {
         display: none; /* Oculta en pantallas chicas */ 
     }
-
+    .footer__logo__redes{
+        height: 3rem;
+        min-height: 50px;
+    }
+    .footer__logo{
+        max-height: 8rem;
+        width: auto;
+    }
 }
 
 @media (min-width: 769px) {
     .menu--mobile {
         display: none; /* Oculta en pantallas grandes  */
     }
-
     .novedades__descripcion{
         margin: 1.5rem;
         margin-bottom: 4rem;
     } 
-
 }
 
 @media (min-width: 993px) {

@@ -5,22 +5,22 @@
     padding: 2rem;
     display: flex;
     align-items: center;
-
     &__contacto {
         background-color: $bg-footer;
         --bs-card-border-color: none;
-        margin-bottom: 0px;
         color: $color-font-dark-bg;
     }
-
+    &__alineacion{
+        @include alineacion-flex (space-between,center);
+    }
     &__logo__redes{
         height: 6vw;
         margin-inline: 1.5vw;
     }
-
     &__logo{
-        max-height: 20rem;
-        width: auto;
+        max-height: 10rem;
+        display: block;
+        margin: auto;
     }
 }
 
@@ -28,3 +28,6 @@
     --bs-card-title-spacer-y: 1.5rem;
 }
 
+
+
+  

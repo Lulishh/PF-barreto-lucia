@@ -1,13 +1,13 @@
 /* Header */
 header{ 
-    background-color: $bg-header;
+    /*background-color: $bg-header-medium;*/
+    animation-name: fondo-header;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
     align-items: center; 
-    
     section{
-        display: flex;
-        align-items: center; 
-        justify-content: center;
-
+        @include alineacion-flex (center,center);
         p{
             font-family: $font-nombre-empresa;
             font-size: map-get($size-text,title-header);
@@ -16,7 +16,6 @@ header{
         }
     }
 }
-
 .menu {
     &__horizontal {
         list-style: none; /* para sacar las viñetas */
@@ -25,75 +24,64 @@ header{
         padding-bottom: 1.5rem;
         background-color: $bg-navbar;
       } 
-
     &__nombre{
         padding-top: 15px;
         padding-bottom: 20px;
     }
-
     &__contenedor__desplegable{
         background-color: $bg-navbar;
     }
-
     &__logo {
         width: 20vw; 
     }
-
     li a{  
         color: $color-font-dark-bg;
         text-decoration: none; /* para sacar el subrayado */
         font-weight: 600px;
     }
-
 }
-
 .nav-item{
     --bs-nav-link-color: #64577e;
     --bs-nav-link-hover-color: #68588a;
 }
-
 .btn-secondary{
-    --bs-btn-color: #3e2525;
-    --bs-btn-bg: #533710;
-    --bs-btn-border-color: none;
-    --bs-btn-hover-color: #5f4d35;
-    --bs-btn-hover-bg: #745d3f;
+    --bs-btn-color: #dfc7c9;
+    --bs-btn-bg: #3e2525;
+    --bs-btn-border-color: #none;
+    --bs-btn-hover-color:#dfc7c9;
+    --bs-btn-hover-bg: #3e2525;
     --bs-btn-hover-border-color: none;
     --bs-btn-focus-shadow-rgb: 130,138,145;
-    --bs-btn-active-color: #5f4d35;
-    --bs-btn-active-bg: #745d3f;
+    --bs-btn-active-color: #dfc7c9;
+    --bs-btn-active-bg: #3e2525;
     --bs-btn-active-border-color: none;
 }
-
 .menu__desplegable {
     &_logo {
-        width: 95px; 
-        height: auto;
+        @include dimensiones (95px,auto);
         margin-bottom: 10px; 
     }
-
     &_contacto p{
         font-size: 13px;
     }
-
     &__linea{
         margin-top: 30px;
         margin-bottom: 30px;
     }
-
     &__redes{
         margin: 20px;
     }
-
     &__logoredes{
-        height: 50px;
-        width: auto;
+        @include dimensiones (auto,50px);
         margin-inline: 10px;
     }
+    li a{  
+        color: $color-titles;
+    }
 }
-
 .dropdown-menu {
     --bs-dropdown-min-width: 18rem;
     padding: 10px; 
     background-color: $bg-navbar-desplegable ;
 }
+

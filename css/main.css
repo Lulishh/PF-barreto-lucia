@@ -6,42 +6,51 @@
   padding: 0;
 }
 
-/*Media query*/
-@media (max-width: 768px) {
-  .menu--desktop {
-    display: none; /* Oculta en pantallas chicas */
+@keyframes fondo-header {
+  0% {
+    background-color: #dfc7c9;
   }
-  .novedades__descripcion {
-    margin: 1.5rem;
-    margin-bottom: 4rem;
+  15% {
+    background-color: #dab7ba;
   }
-  footer {
-    display: none; /* Oculta en pantallas chicas */
+  30% {
+    background-color: #c5abad;
   }
-}
-@media (min-width: 769px) {
-  .menu--mobile {
-    display: none; /* Oculta en pantallas grandes  */
+  40% {
+    background-color: #b39395;
   }
-  .novedades__descripcion {
-    margin: 1.5rem;
-    margin-bottom: 4rem;
+  50% {
+    background-color: #a57d7f;
   }
-}
-@media (min-width: 993px) {
-  .menu--mobile {
-    display: none; /* Oculta en pantallas grandes  */
+  60% {
+    background-color: #a57d7f;
+  }
+  70% {
+    background-color: #b39395;
+  }
+  80% {
+    background-color: #c5abad;
+  }
+  90% {
+    background-color: #dab7ba;
+  }
+  100% {
+    background-color: #dfc7c9;
   }
 }
 /* Header */
 header {
-  background-color: #dfc7c9;
+  /*background-color: $bg-header-medium;*/
+  animation-name: fondo-header;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 5s;
   align-items: center;
 }
 header section {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 header section p {
   font-family: "Salsa", cursive;
@@ -79,15 +88,15 @@ header section p {
 }
 
 .btn-secondary {
-  --bs-btn-color: #3e2525;
-  --bs-btn-bg: #533710;
-  --bs-btn-border-color: none;
-  --bs-btn-hover-color: #5f4d35;
-  --bs-btn-hover-bg: #745d3f;
+  --bs-btn-color: #dfc7c9;
+  --bs-btn-bg: #3e2525;
+  --bs-btn-border-color: #none;
+  --bs-btn-hover-color:#dfc7c9;
+  --bs-btn-hover-bg: #3e2525;
   --bs-btn-hover-border-color: none;
   --bs-btn-focus-shadow-rgb: 130,138,145;
-  --bs-btn-active-color: #5f4d35;
-  --bs-btn-active-bg: #745d3f;
+  --bs-btn-active-color: #dfc7c9;
+  --bs-btn-active-bg: #3e2525;
   --bs-btn-active-border-color: none;
 }
 
@@ -107,9 +116,12 @@ header section p {
   margin: 20px;
 }
 .menu__desplegable__logoredes {
-  height: 50px;
   width: auto;
+  height: 50px;
   margin-inline: 10px;
+}
+.menu__desplegable li a {
+  color: #3d2302;
 }
 
 .dropdown-menu {
@@ -145,16 +157,21 @@ section article a {
 .footer__contacto {
   background-color: #2A3D45;
   --bs-card-border-color: none;
-  margin-bottom: 0px;
   color: #d2bfa7;
+}
+.footer__alineacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .footer__logo__redes {
   height: 6vw;
   margin-inline: 1.5vw;
 }
 .footer__logo {
-  max-height: 20rem;
-  width: auto;
+  max-height: 10rem;
+  display: block;
+  margin: auto;
 }
 
 .card-title {
@@ -199,8 +216,9 @@ section article a {
 /*Sección: sobre nosotros*/
 .sobrenosotros__container {
   display: flex;
-  flex-direction: column;
+  justify-content: none;
   align-items: center;
+  flex-direction: column;
   padding: 20px;
 }
 .sobrenosotros__container p {
@@ -236,6 +254,7 @@ section article a {
 /*Sección: trabajos realizados*/
 .trabajos__container {
   display: flex;
+  justify-content: none;
   align-items: center;
   padding: 50px 30px;
 }
@@ -282,6 +301,42 @@ section article a {
   --bs-btn-bg: #40565f;
   --bs-btn-hover-bg: #2A3D45;
   --bs-btn-active-bg: #DBFEB8;
+}
+
+/*Media query*/
+@media (max-width: 768px) {
+  .menu--desktop {
+    display: none; /* Oculta en pantallas chicas */
+  }
+  .novedades__descripcion {
+    margin: 1.5rem;
+    margin-bottom: 4rem;
+  }
+  footer {
+    display: none; /* Oculta en pantallas chicas */
+  }
+  .footer__logo__redes {
+    height: 3rem;
+    min-height: 50px;
+  }
+  .footer__logo {
+    max-height: 8rem;
+    width: auto;
+  }
+}
+@media (min-width: 769px) {
+  .menu--mobile {
+    display: none; /* Oculta en pantallas grandes  */
+  }
+  .novedades__descripcion {
+    margin: 1.5rem;
+    margin-bottom: 4rem;
+  }
+}
+@media (min-width: 993px) {
+  .menu--mobile {
+    display: none; /* Oculta en pantallas grandes  */
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

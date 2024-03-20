@@ -1,4 +1,4 @@
-@mixin alineacion ($justify, $align){
+@mixin alineacion-flex ($justify, $align){
     display: flex;
     justify-content: $justify;
     align-items: $align;

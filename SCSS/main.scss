@@ -3,8 +3,7 @@
 @import './configuracion/variables';
 @import './configuracion/reset';
 @import './configuracion/mixin';
-@import './configuracion/_mediaquery';
-
+@import './configuracion/animaciones';
 
 //Estructura
 @import 'header';
@@ -16,4 +15,6 @@
 @import './secciones/sobrenosotros';
 @import './secciones/tips';
 @import './secciones/trabajosrealizados';
-@import './secciones/contacto'
+@import './secciones/contacto';
+
+@import './configuracion/_mediaquery'

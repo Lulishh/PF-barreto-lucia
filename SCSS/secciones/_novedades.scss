@@ -1,8 +1,7 @@
 /*Sección: Novedades*/
 
 .banner{
-    width: 100%;
-    height: auto; 
+    @include dimensiones (100%,auto);
     display: block;
 }
 
@@ -17,8 +16,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    @include dimensiones (100%,100%);
     object-fit: cover;
     }
 }

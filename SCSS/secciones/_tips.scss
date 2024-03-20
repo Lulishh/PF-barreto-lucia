@@ -3,20 +3,16 @@
 .tips__cards{
     align-items: center;
     background-color: #fcf3e6;
-
     &__texto{
         text-align: justify;
     }
-
     &__videos{
         margin-top: 10px;
     
     }
-
     &_contenedor{
         padding-bottom: 50px;
     }
-
     p{
         font-size: map-get($size-text, text-section);
     }

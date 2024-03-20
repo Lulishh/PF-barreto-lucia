@@ -1,0 +1,13 @@
+//--Animaciones--//
+@keyframes fondo-header {
+    0% {background-color: $bg-header-light;}
+    15% {background-color: $bg-header-mediumlight;}
+    30% {background-color: $bg-header-medium;}
+    40% {background-color: $bg-header-mediumdark;}
+    50% {background-color: $bg-header-dark;}
+    60% {background-color: $bg-header-dark;}
+    70% {background-color: $bg-header-mediumdark;}
+    80% {background-color: $bg-header-medium;}
+    90% {background-color: $bg-header-mediumlight;}
+    100% {background-color: $bg-header-light;}
+}

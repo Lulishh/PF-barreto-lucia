@@ -2,17 +2,13 @@
 
 .trabajos{
     &__container{
-        display: flex;
-        align-items: center; 
+        @include alineacion-flex (none,center);
         padding: 50px 30px;
     }
-
     &__img{ 
-        width: 300px; 
-        height: auto;
+        @include dimensiones (300px,auto);
         margin: 20px;
     }
-
     &__descripcion{
         flex: 1;
         text-align: center;
